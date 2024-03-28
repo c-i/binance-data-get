@@ -6,7 +6,7 @@ from datetime import date
 
 
 
-DIR = os.getcwd()
+DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 
