@@ -69,8 +69,8 @@ def main():
 
     args = parser.parse_args()
 
-    start = None if args.date_start is None else date.isoformat(args.date_start)
-    end = None if args.date_end is None else date.isoformat(args.date_end)
+    start = None if args.date_start is None else date.fromisoformat(args.date_start)
+    end = None if args.date_end is None else date.fromisoformat(args.date_end)
 
 
     data_dumper = BinanceDataDumper(
